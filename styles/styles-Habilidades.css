@@ -1,0 +1,115 @@
+#grid-container2.ativo {
+    display: none;
+}
+
+.skillsList {
+    flex-direction: column;
+    gap: 0.6vw;
+    margin-top: 0;
+    margin-left: 3vw;
+}
+
+.skillsList li {
+    background-color: #092709;
+    padding: 0.7vw;
+}
+
+.skillsList li:hover {
+    background-color: #24E12D;
+    color: #092709;
+}
+
+.skillName {
+    grid-area: skillName;
+    color: #24E12D;
+}
+
+.skillName h1 {
+    font-size: 1.6vw;
+    font-weight: 300;
+}
+
+.skills {}
+
+.skillPicture {
+    display: none;
+}
+
+.skillPicture.ativo {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    grid-area: skillPicture;
+    width: auto;
+}
+
+.skillPicture img {
+    border-style: solid;
+    border-color: #24E12D;
+    width: 15vw;
+    height: 15vw;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.skillDescription {
+    display: none;
+}
+
+.skillDescription.ativo {
+    display: flex;
+    grid-area: skillDescription;
+    background-color: #092709;
+    width: 80%;
+    height: 22vh;
+    padding: 0 30px 0px 30px;
+    margin-left: 4vw;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+#instruction {
+    background-color: #092709;
+    width: 80%;
+    height: 22vh;
+    padding: 0 30px 0px 30px;
+    margin-left: 4vw;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+#instruction.ativo {
+    transition: opacity 2s ease-out;
+    opacity: 0;
+    display: none;
+}
+
+#instruction p {
+    display: flex;
+    /* position: absolute; */
+    font-size: 1.3vw;
+    color: #24E12D;
+    text-align: justify;
+}
+
+.skillDescription p {
+    font-size: 1.3vw;
+    color: #24E12D;
+    text-align: justify;
+}
+
+
+
+#grid-container2 {
+    margin-top: 6vw;
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "skillName skillPicture"
+        "skillName skillDescription";
+    grid-template-columns: 1fr 1fr;
+}

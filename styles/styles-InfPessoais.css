@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0D150B;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    font-size: 1.6vw;
+    font-weight: bold;
+    color: #24E12D;
+    margin-top: 6vw;
+    z-index: 2;
+
+}
+
+label {
+    text-decoration: none;
+    color: #24E12D;
+    padding: 0 15px 0 15px;
+    height: auto;
+    background: #0D150B;
+    transition: 0.1s text-shadow;
+}
+
+label:hover,
+label:focus {
+    text-shadow: 0em 0em 0.1em #80f686;
+    transition-delay: 0.1ms;
+    /* width: auto;
+    border-left: none;
+    ;
+    border-right: none;
+    border-top: none;
+    border-bottom: 20px solid #0D150B;
+    padding-bottom: 18px; */
+}
+
+.tabs {
+    display: none;
+}
+
+#div {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3vw;
+}
+
+#div div {
+    background-color: #24E12D;
+    width: 80vw;
+    height: 2px;
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.item1 {
+    grid-area: dados;
+    color: #24E12D;
+    margin-bottom: 2vwpx;
+}
+
+.item1 h1 {
+    font-size: 1.6vw;
+    font-weight: 100;
+}
+
+.dados {
+    margin-bottom: 30px;
+}
+
+.item2 {
+    grid-area: sobre;
+    background-color: #092709;
+    width: 100%;
+    height: 30vh;
+    padding: 0 30px 0px 30px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+}
+
+.item2 p {
+    font-size: 1.3vw;
+    color: #24E12D;
+    text-align: justify;
+}
+
+.item3 {
+    display: flex;
+    justify-content: center;
+    grid-area: foto;
+    width: auto;
+}
+
+.item3 img {
+    border-style: solid;
+    border-color: #24E12D;
+    width: 20vw;
+    height: 20vw;
+    object-fit: contain;
+    padding: 10px;
+}
+
+#grid-container {
+    margin-top: 6vw;
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "dados foto"
+        "sobre foto";
+    grid-template-columns: 1fr 1fr;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#grid-container.ativo {
+    display: none;
+}

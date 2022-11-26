@@ -1,0 +1,222 @@
+#background-infPessoais {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -2;
+}
+
+#background-infPessoais.ativo {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    /* margin-left: -13.7vw;
+    margin-top: 1vw; */
+    margin-left: 12.3vw;
+    margin-top: -1.9vw;
+}
+
+#background1-infPessoais {
+    opacity: 1;
+    width: 15vw;
+    height: 2.2vw;
+    background-color: #24E12D;
+    color: #24E12D;
+    position: absolute;
+    margin-left: -13.7vw;
+    margin-top: 1vw;
+    z-index: -1;
+}
+
+#background2-infPessoais {
+    opacity: 1;
+    width: 14.5vw;
+    height: 2.4vw;
+    background-color: #0D150B;
+    color: #0D150B;
+    position: absolute;
+    margin-left: -13.4vw;
+    margin-top: 1.2vw;
+    z-index: -1;
+}
+
+/* ---------------------------------- */
+
+#background-habilidades {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -2;
+}
+
+#background-habilidades.ativo {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    /* margin-left: -13.7vw;
+    margin-top: 1vw; */
+    margin-left: 11.9vw;
+    margin-top: -1.9vw;
+}
+
+#background1-habilidades {
+    opacity: 1;
+    width: 13vw;
+    height: 2.2vw;
+    background-color: #24E12D;
+    color: #24E12D;
+    position: absolute;
+    margin-left: -12.4vw;
+    margin-top: 1vw;
+    z-index: -1;
+}
+
+#background2-habilidades {
+    opacity: 1;
+    width: 12.5vw;
+    height: 2.4vw;
+    background-color: #0D150B;
+    color: #0D150B;
+    position: absolute;
+    margin-left: -12.15vw;
+    margin-top: 1.2vw;
+    z-index: -1;
+}
+
+/* ---------------------------------- */
+
+#background-projetos {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -2;
+}
+
+#background-projetos.ativo {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    /* margin-left: -13.7vw;
+    margin-top: 1vw; */
+    margin-left: 10.9vw;
+    margin-top: -1.9vw;
+}
+
+#background1-projetos {
+    opacity: 1;
+    width: 11vw;
+    height: 2.2vw;
+    background-color: #24E12D;
+    color: #24E12D;
+    position: absolute;
+    margin-left: -11.5vw;
+    margin-top: 1vw;
+    z-index: -1;
+}
+
+#background2-projetos {
+    opacity: 1;
+    width: 10.5vw;
+    height: 2.4vw;
+    background-color: #0D150B;
+    color: #0D150B;
+    position: absolute;
+    margin-left: -11.2vw;
+    margin-top: 1.2vw;
+    z-index: -1;
+}
+
+/* ---------------------------------- */
+
+#background-expProfissionais {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -2;
+}
+
+#background-expProfissionais.ativo {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    /* margin-left: -13.7vw;
+    margin-top: 1vw; */
+    margin-left: 10.9vw;
+    margin-top: -1.9vw;
+}
+
+#background1-expProfissionais {
+    opacity: 1;
+    width: 18vw;
+    height: 2.2vw;
+    background-color: #24E12D;
+    color: #24E12D;
+    position: absolute;
+    margin-left: -11.5vw;
+    margin-top: 1vw;
+    z-index: -1;
+}
+
+#background2-expProfissionais {
+    opacity: 1;
+    width: 17.5vw;
+    height: 2.4vw;
+    background-color: #0D150B;
+    color: #0D150B;
+    position: absolute;
+    margin-left: -11.2vw;
+    margin-top: 1.2vw;
+    z-index: -1;
+}
+
+/* ---------------------------------- */
+
+#background-contato {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: -2;
+}
+
+#background-contato.ativo {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    /* margin-left: -13.7vw;
+    margin-top: 1vw; */
+    margin-left: 10.9vw;
+    margin-top: -1.9vw;
+}
+
+#background1-contato {
+    opacity: 1;
+    width: 10.3vw;
+    height: 2.2vw;
+    background-color: #24E12D;
+    color: #24E12D;
+    position: absolute;
+    margin-left: -11.5vw;
+    margin-top: 1vw;
+    z-index: -1;
+}
+
+#background2-contato {
+    opacity: 1;
+    width: 9.7vw;
+    height: 2.4vw;
+    background-color: #0D150B;
+    color: #0D150B;
+    position: absolute;
+    margin-left: -11.2vw;
+    margin-top: 1.2vw;
+    z-index: -1;
+}

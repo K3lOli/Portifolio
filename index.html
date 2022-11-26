@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles-InfPessoais.css">
+    <link rel="stylesheet" href="./styles/styles-Habilidades.css">
+    <link rel="stylesheet" href="./styles/effectMenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Poppins:wght@200&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="menu">
+        <ul>
+            <li>
+                <input type="radio" name="rd_tabs" class="tabs" id="tab1" onclick="menuSelect1()">
+                <label id="label1" for="tab1" onmouseover="mouseOver_infPessoais()"
+                    onmouseout="mouseOut_infPessoais()">INF
+                    PESSOAIS</label>
+                <!-- <a type="radio" class="link" href="#grid-container" onmouseover="mouseOver1()" onmouseout="mouseOut1()"
+                    onclick="mouseClick1()">INF
+                    PESSOAIS</a> -->
+                <div id="background-infPessoais">
+                    <div id="background1-infPessoais" href=""></div>
+                    <div id="background2-infPessoais" href=""></div>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" name="rd_tabs" class="tabs" id="tab2" onclick='menuSelect2()'>
+                <label for="tab2" onmouseover="mouseOver_habilidades()"
+                    onmouseout="mouseOut_habilidades()">HABILIDADES</label>
+                <!-- <a class="link" href="#grid-container2" onmouseover="mouseOver2()" onmouseout="mouseOut2()"
+                    onclick="mouseClick2()">HABILIDADES</a> -->
+                <div id="background-habilidades">
+                    <a id="background1-habilidades" href=""></a>
+                    <a id="background2-habilidades" href=""></a>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" name="rd_tabs" class="tabs" id="tab3" onclick='menuSelect3()'>
+                <label for="tab3" label id="label1" for="tab1" onmouseover="mouseOver_projetos()"
+                    onmouseout="mouseOut_projetos()">PROJETOS</label>
+                <!-- <a class="link" href="" onmouseover="mouseOver3()" onmouseout="mouseOut3()">PROJETOS</a> -->
+                <div id="background-projetos">
+                    <a id="background1-projetos" href=""></a>
+                    <a id="background2-projetos" href=""></a>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" name="rd_tabs" class="tabs" id="tab4" onclick='menuSelect4()'>
+                <label for="tab4" onmouseover="mouseOver_expProfissionais()"
+                    onmouseout="mouseOut_expProfissionais()">EXP PROFISSIONAIS</label>
+                <!-- <a class="link" href="" onmouseover="mouseOver()" onmouseout="mouseOut()">EXP PROFISSIONAIS</a> -->
+                <div id="background-expProfissionais">
+                    <a id="background1-expProfissionais" href=""></a>
+                    <a id="background2-expProfissionais" href=""></a>
+                </div>
+
+            </li>
+            <li>
+                <input type="radio" name="rd_tabs" class="tabs" id="tab5" onclick='menuSelect5()'>
+                <label for="tab5" onmouseover="mouseOver_contato()" onmouseout="mouseOut_contato()">CONTATO</label>
+                <!-- <a class="link" href="" onmouseover="mouseOver()" onmouseout="mouseOut()">CONTATO</a> -->
+                <div id="background-contato">
+                    <a id="background1-contato" href=""></a>
+                    <a id="background2-contato" href=""></a>
+                </div>
+
+            </li>
+        </ul>
+    </section>
+
+    <section id="div">
+        <div></div>
+    </section>
+
+    <div id="container">
+        <div id="grid-container">
+            <div class="item1">
+                <h1 class="dados"> <strong>Nome:</strong> Kelson Victor
+                </h1>
+                <h1 class="dados">
+                    <strong>Idade:</strong> 23 anos
+                </h1>
+                <h1 class="dados"> <strong>Atuação:</strong> Desevolvedor Front-End</h1>
+            </div>
+
+            <section class="item2">
+                <p>
+                    Apaixonado por tecnologia que decidiu trilhar o caminho da programação. Possuo experiência em
+                    Desenvolvimento Web. Trabalhei com projetos envolvendo gestão educacional, APIs e banco de dados.
+                    Atualmente
+                    estou focando nas tecnologias voltadas ao FrontEnd.
+                    Hoje já entendo tecnologias como ReactJS, Bootstrap, Mysql, etc.
+                </p>
+            </section>
+
+            <section class="item3">
+                <img src="./img/IMAGE-PROFILE2.png" alt="">
+            </section>
+
+        </div>
+
+        <div id="grid-container2">
+            <section class="skillName">
+                <ul class="skillsList">
+                    <li onmouseover="mouseOver1()" onmouseout="mouseOut1()">
+                        <h1>HTML5</h1>
+                    </li>
+                    <li onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+                        <h1>CSS</h1>
+                    </li>
+                    <li onmouseover="mouseOver3()" onmouseout="mouseOut3()">
+                        <h1>JAVASCRIPT</h1>
+                    </li>
+                    <li onmouseover="mouseOver4()" onmouseout="mouseOut4()">
+                        <h1>NODEJS</h1>
+                    </li>
+                    <li onmouseover="mouseOver5()" onmouseout="mouseOut5()">
+                        <h1>REACTJS</h1>
+                    </li>
+                    <li onmouseover="mouseOver6()" onmouseout="mouseOut6()">
+                        <h1>GIT & GITHUB</h1>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="instruction">
+                <p>Passe o mouse por cima dos elementos para uma descrição mais detalhada.</p>
+            </section>
+
+            <section class="skillPicture" id="htmlPicture">
+                <img src="./img/HTML.png" alt="">
+            </section>
+            <section class="skillDescription" id="htmlDescription">
+                <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o
+                    significado e a estrutura do conteúdo da web.</p>
+            </section>
+
+            <section class="skillPicture" id="cssPicture">
+                <img src="./img/CSS.png" alt="">
+            </section>
+            <section class="skillDescription" id="cssDescription">
+                <p>CSS é uma linguagem de estilo (en-US) usada
+                    para descrever a apresentação de um documento escrito em HTML ou em XML. O CSS descreve como
+                    elementos são mostrados na tela, no papel, na
+                    fala ou em outras mídias.</p>
+            </section>
+
+            <section class="skillPicture" id="jsPicture">
+                <img src="./img/JS.png" alt="">
+            </section>
+            <section class="skillDescription" id="jsDescription">
+                <p>JavaScript® é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe,
+                    mais conhecida como a linguagem de script para páginas Web, mas usada também em vários outros
+                    ambientes.</p>
+            </section>
+
+            <section class="skillPicture" id="nodePicture">
+                <img src="./img/NODE.png" alt="">
+            </section>
+            <section class="skillDescription" id="nodeDescription">
+                <p>Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que
+                    permite a execução de códigos JavaScript fora de um navegador web.</p>
+            </section>
+
+            <section class="skillPicture" id="reactPicture">
+                <img src="./img/REACT.png" alt="">
+            </section>
+            <section class="skillDescription" id="reactDescription">
+                <p>O React (também denominado React.js ou ReactJS) é uma biblioteca front-end JavaScript de código
+                    aberto com foco em criar interfaces de usuário em páginas web.</p>
+            </section>
+
+            <section class="skillPicture" id="gitPicture">
+                <img src="./img/GIT&GITHUB.png" alt="">
+            </section>
+            <section class="skillDescription" id="gitDescription">
+                <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.
+                </p>
+            </section>
+
+            <audio src="./aud/mouseOver.mp3" id="mouseOverSound"></audio>
+            <audio src="./aud/171697__nenadsimic__menu-selection-click.wav" id="selectSound"></audio>
+        </div>
+    </div>
+
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
