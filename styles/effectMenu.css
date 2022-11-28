@@ -220,3 +220,36 @@
     margin-top: 1.2vw;
     z-index: -1;
 }
+
+.som {
+    width: auto;
+    height: auto;
+}
+
+img#sound {
+    display: flex;
+    top: 1vw;
+    right: 9vw;
+    object-fit: scale-down;
+    width: 2vw;
+    position: absolute;
+    filter: opacity(0.4) drop-shadow(0 0 0 #24E12D);
+}
+
+img#sound.ativo {
+    display: none;
+}
+
+img#withSound {
+    display: none;
+}
+
+img#withSound.ativo {
+    display: flex;
+    top: 1vw;
+    right: 9vw;
+    object-fit: scale-down;
+    width: 2vw;
+    position: absolute;
+    filter: opacity(0.4) drop-shadow(0 0 0 #24E12D);
+}

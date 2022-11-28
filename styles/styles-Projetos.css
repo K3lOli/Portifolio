@@ -1,0 +1,143 @@
+#grid-container3.ativo {
+    display: none;
+}
+
+.projectsList {
+    flex-direction: column;
+    gap: 0.6vw;
+    margin-top: 0;
+    margin-left: 3vw;
+}
+
+.projectsList li {
+    background-color: #092709;
+    padding: 0.7vw;
+}
+
+a {
+    color: #24E12D;
+}
+
+/* .projectsList li:hover {
+    background-color: #24E12D;
+    color: #092709;
+} */
+
+#landingPage.ativo {
+    background-color: #24E12D;
+    color: #092709;
+}
+
+#FMS.ativo {
+    background-color: #24E12D;
+    color: #092709;
+}
+
+#emp1.ativo {
+    background-color: #24E12D;
+    color: #092709;
+}
+
+#emp2.ativo {
+    background-color: #24E12D;
+    color: #092709;
+}
+
+.projectsName {
+    grid-area: skillName;
+    color: #24E12D;
+}
+
+.projectsName h1 {
+    font-size: 1.6vw;
+    font-weight: 300;
+}
+
+.skills {}
+
+.projectPicture {
+    display: none;
+}
+
+.projectPicture.ativo {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    grid-area: skillPicture;
+    width: auto;
+}
+
+.projectPicture img {
+    border-style: solid;
+    border-color: #24E12D;
+    width: 27vw;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.ProjectDescription {
+    display: none;
+}
+
+.ProjectDescription.ativo {
+    display: flex;
+    /* grid-area: skillDescription; */
+    background-color: #092709;
+    width: 80%;
+    height: auto;
+    padding: 20px 30px 20px 30px;
+    margin-left: 4vw;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+#instruction1 {
+    background-color: #092709;
+    width: 80%;
+    height: 10vw;
+    padding: 20px 30px 20px 30px;
+    margin-left: 4vw;
+    margin-top: 2vw;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+#instruction1.ativo {
+    transition: opacity 2s ease-out;
+    opacity: 0;
+    display: none;
+}
+
+#instruction1 p {
+    display: flex;
+    /* position: absolute; */
+    font-size: 1.3vw;
+    color: #24E12D;
+    text-align: justify;
+}
+
+.ProjectDescription a {
+    text-decoration: underline;
+}
+
+.ProjectDescription p {
+    font-size: 1.3vw;
+    color: #24E12D;
+    text-align: justify;
+}
+
+
+
+#grid-container3 {
+    margin-top: 6vw;
+    width: 70vw;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+        "skillName skillPicture"
+        "skillName skillDescription";
+    grid-template-columns: 1fr 1fr;
+}

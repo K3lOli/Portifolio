@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles-InfPessoais.css">
     <link rel="stylesheet" href="./styles/styles-Habilidades.css">
+    <link rel="stylesheet" href="./styles/styles-Projetos.css">
+    <link rel="stylesheet" href="./styles/styles-ExpProfissionais.css">
+    <link rel="stylesheet" href="./styles/styles-Contato.css">
     <link rel="stylesheet" href="./styles/effectMenu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
@@ -16,7 +19,16 @@
 </head>
 
 <body>
+
+
     <section id="menu">
+        <section class="som" onmouseover="mouseOverContato()">
+            <img id="sound" src="./img/caixas-de-som.png" alt="" onclick="mute()">
+        </section>
+        <section class="som" onclick="som()">
+            <img id="withSound" src="./img/sem-som.png" alt="" onclick="mute()">
+        </section>
+
         <ul>
             <li>
                 <input type="radio" name="rd_tabs" class="tabs" id="tab1" onclick="menuSelect1()">
@@ -113,23 +125,23 @@
         <div id="grid-container2">
             <section class="skillName">
                 <ul class="skillsList">
-                    <li onmouseover="mouseOver1()" onmouseout="mouseOut1()">
-                        <h1>HTML5</h1>
+                    <li>
+                        <h1 onmouseover="mouseOver1()" onmouseout="mouseOut1()">HTML5</h1>
                     </li>
-                    <li onmouseover="mouseOver2()" onmouseout="mouseOut2()">
-                        <h1>CSS</h1>
+                    <li>
+                        <h1 onmouseover="mouseOver2()" onmouseout="mouseOut2()">CSS</h1>
                     </li>
-                    <li onmouseover="mouseOver3()" onmouseout="mouseOut3()">
-                        <h1>JAVASCRIPT</h1>
+                    <li>
+                        <h1 onmouseover="mouseOver3()" onmouseout="mouseOut3()">JAVASCRIPT</h1>
                     </li>
-                    <li onmouseover="mouseOver4()" onmouseout="mouseOut4()">
-                        <h1>NODEJS</h1>
+                    <li>
+                        <h1 onmouseover="mouseOver4()" onmouseout="mouseOut4()">NODEJS</h1>
                     </li>
-                    <li onmouseover="mouseOver5()" onmouseout="mouseOut5()">
-                        <h1>REACTJS</h1>
+                    <li>
+                        <h1 onmouseover="mouseOver5()" onmouseout="mouseOut5()">REACTJS</h1>
                     </li>
-                    <li onmouseover="mouseOver6()" onmouseout="mouseOut6()">
-                        <h1>GIT & GITHUB</h1>
+                    <li>
+                        <h1 onmouseover="mouseOver6()" onmouseout="mouseOut6()">GIT & GITHUB</h1>
                     </li>
                 </ul>
             </section>
@@ -192,11 +204,105 @@
             <audio src="./aud/mouseOver.mp3" id="mouseOverSound"></audio>
             <audio src="./aud/171697__nenadsimic__menu-selection-click.wav" id="selectSound"></audio>
         </div>
-    </div>
+
+        <div id="grid-container3">
+            <section class="projectsName">
+                <ul class="projectsList">
+                    <li id="landingPage" onmouseover="mouseOverLandingPage()" onmouseout="mouseOutLandingPage()"
+                        onclick="selectLandingPage()">
+                        <h1>LANDING PAGE ENERGIA SOLAR</h1>
+                    </li>
+                    <li id="FMS" onmouseover="mouseOverFMS()" onmouseout="mouseOutLandingPage()">
+                        <h1>REPAGINAÇÃO FMS (EM ANDAMENTO)</h1>
+                    </li>
+                    <li id="emp1" onmouseover="mouseOverEMP1()" onmouseout="mouseOutLandingPage()">
+                        <h1>EMPTY (AGUARDE)</h1>
+                    </li>
+                    <li id="emp2" onmouseover="mouseOverEMP2()" onmouseout="mouseOutLandingPage()">
+                        <h1>EMPTY (AGUARDE)</h1>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="instruction1">
+                <p>Passe o mouse por cima dos elementos para uma descrição mais detalhada.</p>
+            </section>
+
+            <section class="projectPicture" id="LandingPagePicture">
+                <img src="./img/LandingPage_AdobeExpress.gif" alt="">
+            </section>
+            <section class="ProjectDescription" id="LandingPageDescription">
+                <p>Fazer uma descrição resumida sobre a página e colocar o link.
+                    Link para acesso: <a href="https://k3loli.github.io/LandingPageLurys/" target="_blank"
+                        rel="noopener noreferrer">Landing Page Lurys</a>
+
+                </p>
+            </section>
+
+            <section class="projectPicture" id="FMSPicture">
+                <img src="./img/CSS.png" alt="">
+            </section>
+            <section class="ProjectDescription" id="FMSDescription">
+                <p>Fazer uma descrição resumida sobre a página e colocar o link.</p>
+            </section>
+
+            <section class="projectPicture" id="empPicture">
+                <img src="./img/JS.png" alt="">
+            </section>
+            <section class="ProjectDescription" id="empDescription">
+                <p>Aguarde. Novos projetos em breve!</p>
+            </section>
+
+            <audio src="./aud/mouseOver.mp3" id="mouseOverSound"></audio>
+            <audio src="./aud/171697__nenadsimic__menu-selection-click.wav" id="selectSound"></audio>
+        </div>
+
+        <div id="grid-container4">
+            <section class="expProfissionais">
+                <p>Em busca da minha primeira experiência como programador.</p>
+            </section>
+
+            <audio src="./aud/mouseOver.mp3" id="mouseOverSound"></audio>
+            <audio src="./aud/171697__nenadsimic__menu-selection-click.wav" id="selectSound"></audio>
+        </div>
+
+        <div id="grid-container5">
+            <section class="contato">
+                <ul class="contatList">
+                    <li onmouseover="mouseOverContato()" onmouseout="mouseOutContato()">
+                        <a href="https://www.linkedin.com/in/kelson-victor-378aa914b/" target="_blank"
+                            rel="noopener noreferrer">
+                            <h1>LINKEDIN</h1>
+                        </a>
+                    </li>
+                    <li onmouseover="mouseOverContato()" onmouseout="mouseOutContato()">
+                        <a href="https://github.com/K3lOli" target="_blank" rel="noopener noreferrer">
+                            <h1>GITHUB</h1>
+                        </a>
+                    </li>
+                    <li onmouseover="mouseOverContato()" onmouseout="mouseOutContato()">
+                        <a href="https://wa.me/5586994783119" target="_blank" rel="noopener noreferrer">
+                            <h1>WHATSAPP</h1>
+                        </a>
+                    </li>
+                    <li onmouseover="mouseOverContato()" onmouseout="mouseOutContato()">
+                        <a href="mailto:k3lson.victor@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <h1>EMAIL</h1>
+                        </a>
+                    </li>
+                    <li onmouseover="mouseOverContato()" onmouseout="mouseOutContato()">
+                        <a href="https://www.instagram.com/kelson_vict0r/" target="_blank" rel="noopener noreferrer">
+                            <h1>INSTAGRAM</h1>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
 
 
-    <script src="./script/script.js"></script>
+
+        <script src="./script/script.js"></script>
 </body>
 
 </html>

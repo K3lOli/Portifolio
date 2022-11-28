@@ -7,6 +7,9 @@ const detailMenuContato = document.querySelector('#background-contato')
 
 const pagSobre = document.querySelector('#grid-container')
 const pagHabilidades = document.querySelector('#grid-container2')
+const pagProjetos = document.querySelector("#grid-container3")
+const pagExpProfissionais = document.querySelector("#grid-container4")
+const pagContato = document.querySelector("#grid-container5")
 
 
 const htmlDescription = document.querySelector("#htmlDescription")
@@ -22,10 +25,24 @@ const reactImage = document.querySelector("#reactPicture")
 const gitDescription = document.querySelector("#gitDescription")
 const gitImage = document.querySelector("#gitPicture")
 
+const landingPageDescription = document.querySelector("#LandingPageDescription")
+const landingPageImage = document.querySelector("#LandingPagePicture")
+const FMSDescription = document.querySelector("#FMSDescription")
+const empDescription = document.querySelector("#empDescription")
+
+const landingPageList = document.querySelector("#landingPage")
+const FMSList = document.querySelector("#FMS")
+const emp1List = document.querySelector("#emp1")
+const emp2List = document.querySelector("#emp2")
+
+const sound = document.querySelector("#sound")
+const withSound = document.querySelector("#withSound")
+
 const mouseOverSound = document.querySelector("#mouseOverSound")
 const selectSound = document.querySelector("#selectSound")
 
 const instruction = document.querySelector("#instruction")
+const instruction1 = document.querySelector("#instruction1")
 
 // var radio1 = document.getElementById("tab1");
 // var radio2 = document.getElementById("tab2");
@@ -81,6 +98,9 @@ function mouseOut_contato() {
 window.onload = function LoadmenuSelect() {
     detailMenuInfPessoais.classList.add('ativo');
     pagHabilidades.classList.add('ativo')
+    pagProjetos.classList.add('ativo')
+    pagExpProfissionais.classList.add("ativo")
+    pagContato.classList.add("ativo")
     mouseOverSound.play()
 
 }
@@ -122,8 +142,6 @@ window.onload = function LoadmenuSelect() {
 // }
 
 function menuSelect1() {
-
-    // if (radio1.checked == true) {
     detailMenuInfPessoais.classList.add('ativo');
     detailMenuHabilidades.classList.remove('ativo');
     detailMenuProjetos.classList.remove('ativo');
@@ -131,10 +149,10 @@ function menuSelect1() {
     detailMenuContato.classList.remove('ativo')
     pagSobre.classList.remove('ativo')
     pagHabilidades.classList.add('ativo')
+    pagProjetos.classList.add('ativo')
+    pagExpProfissionais.classList.add("ativo")
+    pagContato.classList.add("ativo")
     selectSound.play()
-    // click = 0;
-    // }
-
 }
 
 
@@ -147,13 +165,11 @@ function menuSelect2() {
     detailMenuContato.classList.remove('ativo')
     pagSobre.classList.add('ativo')
     pagHabilidades.classList.remove('ativo')
+    pagProjetos.classList.add('ativo')
+    pagExpProfissionais.classList.add("ativo")
+    pagContato.classList.add("ativo")
     console.log("deu certo")
     selectSound.play()
-    // }
-    // else {
-
-    // }
-
 }
 
 function menuSelect3() {
@@ -166,12 +182,10 @@ function menuSelect3() {
     console.log("deu certo")
     pagSobre.classList.add('ativo')
     pagHabilidades.classList.add('ativo')
+    pagProjetos.classList.remove('ativo')
+    pagExpProfissionais.classList.add("ativo")
+    pagContato.classList.add("ativo")
     selectSound.play()
-    // }
-    // else {
-
-    // }
-
 }
 
 function menuSelect4() {
@@ -181,12 +195,13 @@ function menuSelect4() {
     detailMenuHabilidades.classList.remove('ativo');
     detailMenuInfPessoais.classList.remove('ativo');
     detailMenuContato.classList.remove('ativo')
+    pagExpProfissionais.classList.remove("ativo")
+    pagSobre.classList.add('ativo')
+    pagHabilidades.classList.add('ativo')
+    pagProjetos.classList.add('ativo')
+    pagContato.classList.add("ativo")
     console.log("deu certo")
     selectSound.play()
-    // }
-    // else {
-
-    // }
 
 }
 
@@ -197,55 +212,14 @@ function menuSelect5() {
     detailMenuProjetos.classList.remove('ativo');
     detailMenuHabilidades.classList.remove('ativo');
     detailMenuInfPessoais.classList.remove('ativo');
+    pagContato.classList.remove("ativo")
+    pagExpProfissionais.classList.add("ativo")
+    pagSobre.classList.add('ativo')
+    pagHabilidades.classList.add('ativo')
+    pagProjetos.classList.add('ativo')
     console.log("deu certo")
     selectSound.play()
-    // }
-    // else {
-
-    // }
-
 }
-
-
-
-
-// function mouseClick1() {
-//     detailMenu1InfPessoais.classList.add('ativo');
-//     detailMenu2InfPessoais.classList.add('ativo');
-//     detailMenu1Habilidades.classList.remove('ativo');
-//     detailMenu2Habilidades.classList.remove('ativo');
-//     detailMenu1Projetos.classList.remove('ativo');
-//     detailMenu2Projetos.classList.remove('ativo');
-//     pagSobre.classList.remove('ativo');
-//     click = true;
-// }
-
-// function mouseClick2() {
-//     detailMenu1InfPessoais.classList.remove('ativo');
-//     detailMenu2InfPessoais.classList.remove('ativo');
-//     detailMenu1Habilidades.classList.add('ativo');
-//     detailMenu2Habilidades.classList.add('ativo');
-//     detailMenu1Projetos.classList.remove('ativo');
-//     detailMenu2Projetos.classList.remove('ativo');
-//     pagSobre.classList.add('ativo');
-// }
-
-// function mouseOver2() {
-//     detailMenu1Habilidades.classList.add('ativo');
-//     detailMenu2Habilidades.classList.add('ativo');
-//     console.log("deu certo")
-// }
-
-// function mouseOut2() {
-//     detailMenu1Habilidades.classList.remove('ativo');
-//     detailMenu2Habilidades.classList.remove('ativo');
-// }
-
-// function mouseOver3() {
-//     detailMenu1Projetos.classList.add('ativo');
-//     detailMenu2Projetos.classList.add('ativo');
-//     console.log("deu certo")
-// }
 
 function mouseOver1() {
     htmlDescription.classList.add('ativo')
@@ -337,3 +311,100 @@ function mouseOut6() {
     mouseOverSound.currentTime = 0
 }
 
+function mouseOverLandingPage() {
+    landingPageDescription.classList.add('ativo')
+    landingPageImage.classList.add('ativo')
+    FMSDescription.classList.remove("ativo")
+    empDescription.classList.remove("ativo")
+    instruction1.classList.add('ativo')
+    mouseOverSound.pause()
+    mouseOverSound.currentTime = 0
+    mouseOverSound.play()
+    landingPageList.classList.add("ativo")
+    FMSList.classList.remove("ativo")
+    emp1List.classList.remove("ativo")
+    emp2List.classList.remove("ativo")
+}
+
+function mouseOutLandingPage() {
+    mouseOverSound.pause()
+    mouseOverSound.currentTime = 0
+}
+
+function mouseOverFMS() {
+    FMSDescription.classList.add("ativo")
+    landingPageDescription.classList.remove('ativo')
+    landingPageImage.classList.remove('ativo')
+    empDescription.classList.remove("ativo")
+    instruction1.classList.add('ativo')
+    mouseOverSound.pause()
+    mouseOverSound.currentTime = 0
+    mouseOverSound.play()
+    FMSList.classList.add("ativo")
+    landingPageList.classList.remove("ativo")
+    emp1List.classList.remove("ativo")
+    emp2List.classList.remove("ativo")
+}
+
+function mouseOverEMP1() {
+    empDescription.classList.add("ativo")
+    landingPageDescription.classList.remove('ativo')
+    landingPageImage.classList.remove('ativo')
+    FMSDescription.classList.remove("ativo")
+    instruction1.classList.add('ativo')
+    mouseOverSound.pause()
+    mouseOverSound.currentTime = 0
+    mouseOverSound.play()
+    emp1List.classList.add("ativo")
+    FMSList.classList.remove("ativo")
+    landingPageList.classList.remove("ativo")
+    emp2List.classList.remove("ativo")
+}
+
+function mouseOverEMP2() {
+    empDescription.classList.add("ativo")
+    landingPageDescription.classList.remove('ativo')
+    landingPageImage.classList.remove('ativo')
+    FMSDescription.classList.remove("ativo")
+    instruction1.classList.add('ativo')
+    mouseOverSound.pause()
+    mouseOverSound.currentTime = 0
+    mouseOverSound.play()
+    emp2List.classList.add("ativo")
+    emp1List.classList.remove("ativo")
+    FMSList.classList.remove("ativo")
+    landingPageList.classList.remove("ativo")
+}
+
+function mouseOverContato() {
+    mouseOverSound.play()
+}
+function mouseOutContato() {
+    mouseOverSound.pause()
+    mouseOverSound.currentTime = 0
+}
+
+function mute() {
+    sound.classList.toggle("ativo")
+    withSound.classList.toggle("ativo")
+    mouseOverSound.muted = true;
+    selectSound.muted = true;
+}
+
+function som() {
+    mouseOverSound.muted = false;
+    selectSound.muted = false;
+}
+
+// function mouseOverSound() {
+//     mouseOverSound.play()
+// }
+
+
+// function selectLandingPage() {
+//     landingPageDescription.classList.add('ativo')
+//     landingPageImage.classList.add('ativo')
+//     instruction1.classList.add('ativo')
+//     selectSound.play()
+//     mouseOutLandingPage(stop)
+// }

@@ -61,8 +61,8 @@
     grid-area: skillDescription;
     background-color: #092709;
     width: 80%;
-    height: 22vh;
-    padding: 0 30px 0px 30px;
+    height: auto;
+    padding: 20px 30px 20px 30px;
     margin-left: 4vw;
     margin-top: 2vw;
     display: flex;
@@ -72,7 +72,7 @@
 #instruction {
     background-color: #092709;
     width: 80%;
-    height: 22vh;
+    height: 10vw;
     padding: 0 30px 0px 30px;
     margin-left: 4vw;
     margin-top: 2vw;

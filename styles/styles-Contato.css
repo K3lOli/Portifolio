@@ -1,0 +1,52 @@
+#grid-container5.ativo {
+    display: none;
+}
+
+.contato {
+    margin-top: 6vw;
+}
+
+.contatList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.6vw;
+    margin-top: 0;
+    margin-left: 3vw;
+}
+
+.contatList li {
+    background-color: #0D150B;
+    display: flex;
+    justify-content: center;
+    /* padding: 0.7vw; */
+    width: 50vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contatList a {
+    background-color: #0D150B;
+    display: flex;
+    justify-content: center;
+    padding: 0.7vw;
+    width: 50vw;
+}
+
+.contatList a h1 {
+    font-size: 1.6vw;
+    font-weight: 300;
+}
+
+.contatList a:hover {
+    background-color: #24E12D;
+    color: #092709;
+}
+
+#grid-container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
